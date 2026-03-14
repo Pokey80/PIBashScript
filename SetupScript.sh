@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-apt install -y net-tools containerd kubectl apt-transport-https ca-certificates curl gnupg\
+apt install -y net-tools containerd apt-transport-https ca-certificates curl gnupg\
 
 curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.35/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 chmod 644 /etc/apt/keyrings/kubernetes-apt-keyring.gpg
